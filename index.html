@@ -24,7 +24,7 @@ nav{
 
 .navigation{
     display:flex;
-    flex-wrap:wrap; /* 🔥 MAIN POINT */
+    flex-wrap:wrap; 
     align-items:center;
     justify-content:space-between;
     padding:0 50px;
@@ -44,15 +44,15 @@ nav{
 /* RIGHT SIDE */
 .right{
     display:flex;
-    flex-wrap:wrap; /* 🔥 wrap here also */
+    flex-wrap:wrap; 
     align-items:center;
     gap:25px;
 }
 
-/* MENU */
+
 .menu ul{
     display:flex;
-    flex-wrap:wrap; /* 🔥 menu bhi wrap kare */
+    flex-wrap:wrap; 
     list-style:none;
     gap:25px;
 }
@@ -93,7 +93,7 @@ nav{
     gap:8px;
 }
 
-/* SMALL SCREEN IMPROVEMENT REMOVED - CONSOLIDATED AT BOTTOM */
+
 
 .hero{
     width:90%;
@@ -127,7 +127,7 @@ nav{
     color:#ccc;
 }
 
-/* SEARCH */
+
 .search-box{
     display:flex;
     margin-top:20px;
@@ -151,14 +151,12 @@ nav{
     padding:10px 20px;
 }
 
-/* RIGHT */
 .hero-right{
     flex:1;
     background:orange;
     position:relative;
 }
 
-/* CURVE */
 .hero-right::before{
     content:"";
     position:absolute;
@@ -197,7 +195,6 @@ nav{
     margin-bottom:5px;
 }
 
-/* CARD POSITIONS */
 .card1{
     top:50px;
     right:40px;
@@ -213,14 +210,14 @@ nav{
     right:60px;
 }
 
-/* MOBILE REMOVED - CONSOLIDATED AT BOTTOM */
+
 
 .container{
     width:90%;
     margin:40px auto;
 }
 
-/* ===== HEADER ===== */
+
 .top{
     display:flex;
     justify-content:space-between;
@@ -260,7 +257,6 @@ nav{
     border-radius:20px;
 }
 
-/* ===== DEAL CARDS ===== */
 .deals{
     display:flex;
     gap:20px;
@@ -282,7 +278,6 @@ nav{
     object-fit:cover;
 }
 
-/* overlay */
 .deal-card::after{
     content:"";
     position:absolute;
@@ -320,8 +315,6 @@ nav{
 .cat-card{
     width:100%;
 }
-
-/* IMAGE */
 .cat-card img{
     width:100%;
     height:120px;
@@ -330,7 +323,7 @@ nav{
     border-radius:10px 10px 0 0;
 }
 
-/* SINGLE BOX (TITLE + DESC) */
+
 .cat-info{
     background:black;
     padding:8px;
@@ -353,7 +346,7 @@ nav{
     margin:0;
 }
 
-/* RESPONSIVE CATEGORY REMOVED - CONSOLIDATED AT BOTTOM */
+
 
 /* ===== RESTAURANTS ===== */
 .restaurants {
@@ -378,23 +371,23 @@ nav{
     .logo-card {
         background: #fff;
         border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Soft shadow design ke liye */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
         padding: 20px;
         text-align: center;
         flex: 1;
-        min-width: 160px; /* Choti screen par cards wrap honge */
+        min-width: 160px; 
         transition: transform 0.3s ease;
         border: 1px solid #eee;
     }
 
     .logo-card:hover {
-        transform: translateY(-5px); /* Hover effect */
+        transform: translateY(-5px); 
     }
 
     .logo-card img {
-        width: 100px; /* Fixed size taaki saare logos ek jaise dikhein */
+        width: 100px;
         height: 100px;
-        object-fit: contain; /* Logo ko stretch hone se bachata hai */
+        object-fit: contain; 
         margin-bottom: 15px;
     }
 
@@ -429,7 +422,7 @@ nav{
         max-width: 450px;
         border-radius: 15px;
         object-fit: cover;
-        /* Box shadow thoda depth dene ke liye */
+     
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
@@ -482,7 +475,7 @@ nav{
         transform: scale(1.05);
     }
 
-    /* RESPONSIVE PROMO REMOVED - CONSOLIDATED AT BOTTOM */
+   
 /* ===== BOTTOM CARDS ===== */
 .bottom-cards{
     display:flex;
@@ -870,11 +863,7 @@ nav{
                font-weight: 500;
              }
 
-        /* ========================================= */
-        /* RESPONSIVE BREAKPOINTS (7 BREAKPOINTS)    */
-        /* ========================================= */
-        
-        /* 1. 1440px (Large Desktops) */
+      
         @media (max-width: 1440px) {
             .navigation { padding: 0 40px; }
             .hero, .container, .know-more-container { width: 95%; max-width: 1400px; margin-left: auto; margin-right: auto; }
